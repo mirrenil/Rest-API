@@ -1,10 +1,9 @@
 const express = require("express");
-const { json } = require("express/lib/response");
 const app = express();
 const port = 3000;
 
 app.use("/", (req, res, next) => {
-  console.log("hello I see you");
+  console.log("hello BAE I see you");
   next();
 });
 
@@ -35,6 +34,7 @@ const matchas = [
 ];
 
 app.get("/api/matcha", (req, res) => {
+  res.send("hello there");
   req.json(matchas);
 });
 
@@ -42,19 +42,12 @@ app.get("/api/matcha", (req, res) => {
 app.post("/api/matcha", (req, res) => {
   console.log(req.body);
   matchas.push(req.body);
-  res.status(201).send({
-    type: "post",
-    name: req.body.name,
-    price: req.body.price,
-    id: req.body.id,
-  });
+  res.status(201).send("new matcha");
 });
 
 // update matcha
 app.put("/api/matchas/:id", (req, res) => {
-  const matcha = matchas.find(
-    (matcha) => matcha.id === parseInt(req.params.id)
-  );
+  res.send("update matcha");
 });
 
 // remove a matcha drink

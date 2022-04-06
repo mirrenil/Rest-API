@@ -1,3 +1,6 @@
+window.addEventListener("load", (event) => {
+  console.log("Welcome to Matcha Heaven!");
+});
 document
   .getElementsByTagName("button")[0]
   .addEventListener("click", async (event) => {

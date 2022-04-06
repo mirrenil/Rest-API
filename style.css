@@ -8,7 +8,6 @@
 
 body {
     background: linear-gradient(90deg, #fbb3b3, #9198e5);
-    /* background: linear-gradient(#fbb3b3, #9198e5); */
     color: #feeefe;
     display: flex;
     flex-direction: column;
@@ -18,8 +17,17 @@ body {
         cursive;
 }
 
+.header-style {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
 header {
     font-size: 5rem;
+    padding: 2rem;
 
 }
 
@@ -28,6 +36,7 @@ span {
     font-family: 'Permanent Marker',
         cursive;
     color: #C6FFDD;
+    margin: 2rem;
 }
 
 .btn-group {
@@ -41,9 +50,9 @@ span {
 button {
     width: 200px;
     height: 50px;
-    border: none;
+    border: solid #9198e5 .2rem;
     border-radius: 2rem;
     font-size: 1.5rem;
     background-color: #feeefe;
-    color: #aaa;
+    color: #9198e5;
 }
