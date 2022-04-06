@@ -1,21 +1,21 @@
-GET http://localhost:3000/api/matcha
+GET http://localhost:3000/api/matchas
 
 ###
 
-# POST http://localhost:3000/api/matcha
-# Content-Type: application/json
+POST http://localhost:3000/api/matchas
+Content-Type: application/json
 
-#     {
-#         "name": "Activated Charcoal Matcha",
-#         "price": 35,
-#         "id": 5,
-#     }
+    {
+        "name": "Activated Charcoal Matcha",
+        "price": 35,
+        "id": 5,
+    }
 
-# ###
+###
 
-# PUT http://localhost:3000/api/matcha/id
+PUT http://localhost:3000/api/matchas/id
 
 
-# ###
+###
 
-# DELETE http://localhost:3000/api/matcha/id
+DELETE http://localhost:3000/api/matcha/id
