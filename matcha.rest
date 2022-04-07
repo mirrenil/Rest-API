@@ -5,11 +5,10 @@ GET http://localhost:3000/api/matchas
 POST http://localhost:3000/api/matchas
 Content-Type: application/json
 
-    {
-        "name": "Activated Charcoal Matcha",
-        "price": 35,
-        "id": 5,
-    }
+{
+    "name": "Activated Charcoal Matcha",
+    "price": 35
+}
 
 ###
 

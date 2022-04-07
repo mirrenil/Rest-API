@@ -1,8 +1,8 @@
-window.addEventListener("load", (event) => {
+window.addEventListener("load", (e) => {
   console.log("Welcome to Matcha Heaven!");
 });
-document.getElementById("button").addEventListener("click", (event) => {
-  getMatchas();
+document.getElementById("button").addEventListener("click", async () => {
+  let matchas = await getMatchas();
 });
 
 async function getMatchas() {

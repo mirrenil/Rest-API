@@ -1,80 +1,54 @@
-const Joi = require("joi");
+const { v4: uuidv4 } = require("uuid");
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use("/", (req, res, next) => {
-  console.log("hello BAE I see you");
+  console.log("hello I see you");
   next();
 });
 
 app.use("/", express.static("public"));
 app.use(express.json());
 
-const matchas = [
-  {
-    name: "Matcha Latte",
-    price: 45,
-    id: 1,
-  },
-  {
-    name: "Matcha Iced Latte",
-    price: 45,
-    id: 2,
-  },
-  {
-    name: "Matcha CBD Latte",
-    price: 75,
-    id: 3,
-  },
-  {
-    name: "Matcha Lavender Iced Latte",
-    price: 75,
-    id: 4,
-  },
-];
+const matchas = [];
 
 app.get("/api/matchas", (req, res) => {
   res.send(matchas);
+  console.log(matchas);
   //req.json(matchas);
 });
-// find matcha
-app.get("/api/matcha/:id", (req, res) => {
+
+// find matcha - GET
+app.get("/api/matchas/:id", (req, res) => {
   const matcha = matchas.find((m) => m.id === parseInt(req.params.id));
   if (!matcha) return res.status(404).send("Matcha not found");
-  res.send(matcha);
+  res.json(matcha);
+  console.log(req.params.id);
 });
 
-// add new matcha to menu
+// add new matcha to menu - POST
 app.post("/api/matchas", (req, res) => {
-  const { error } = validateMatcha(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
+  const newMatcha = req.body;
 
-  const matcha = {
-    id: matchas.length + 1,
-    name: req.body.name,
-  };
-  matchas.push(matcha);
-  res.send(matcha);
-  res.status(201).send("new matcha");
-  //   console.log(req.body);
-  //   matchas.push(req.body);
+  matchas.push({ ...newMatcha, id: uuidv4() });
+
+  res.status(201).send(`${newMatcha.name} added to menu`);
 });
 
-// update matcha
+// update matcha - PATCH
 app.put("/api/matchas/:id", (req, res) => {
   const matcha = matchas.find((m) => m.id === parseInt(req.params.id));
   if (!matcha)
     return res.status(404).send("Matcha with the given ID not found");
 
-  const { error } = validateMatcha(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
-
   matcha.name = req.body.name;
-  res.send(matcha);
+  const updatedMatcha = { ...matcha, ...req.body };
+  res.json(updatedMatcha);
+  res.send(updatedMatcha);
 });
 
-// remove a matcha drink
+// remove a matcha drink - DELETE
 app.delete("/api/matchas/:id", (req, res) => {
   const matcha = matchas.find((m) => m.id === parseInt(req.params.id));
   if (!matcha) return res.status(404).send("Matcha not found");
@@ -86,10 +60,3 @@ app.delete("/api/matchas/:id", (req, res) => {
 });
 
 app.listen(port, () => console.log(`This app is running on port ${port}!`));
-
-function validateMatcha(matcha) {
-  const schema = {
-    name: Joi.string().min(5).required(),
-  };
-  return Joi.validate(matcha, schema);
-}
