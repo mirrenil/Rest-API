@@ -18,11 +18,11 @@ export function saveMatcha(list) {
 export function findExistingID(id) {
   let matchas = matchasInStock();
 
-  let thisMatcha = matchas.find((matcha) => {
+  let specificMatcha = matchas.find((matcha) => {
     return matcha.id === id;
   });
-  if (thisMatcha) {
-    return thisMatcha;
+  if (specificMatcha) {
+    return specificMatcha;
   } else {
     return false;
   }

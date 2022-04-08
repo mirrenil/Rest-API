@@ -19,7 +19,7 @@ router.post("/", createMatcha);
 router.get("/:id", getMatcha);
 
 //PUT
-router.put("/", updateMatcha);
+router.put("/:id", updateMatcha);
 
 //DELETE
 router.delete("/:id", deleteMatcha);

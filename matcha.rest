@@ -2,7 +2,7 @@ GET http://localhost:3000/matchas
 
 ###
 
-GET http://localhost:3000/matchas/7cae6274-8f14-437e-83ee-76609f7c832f
+GET http://localhost:3000/matchas/9
 
 
 ###
@@ -10,21 +10,20 @@ GET http://localhost:3000/matchas/7cae6274-8f14-437e-83ee-76609f7c832f
 POST http://localhost:3000/matchas
 Content-Type: application/json
 
-{
-    "name": "Matcha Activated Charcoal Latte",
-    "price": 75,
-    "id": ""
-}
+ { 
+    "name": "Matcha Oat Latte", 
+    "price": 55, 
+    "id": "1" 
+  }
 
 ###
 
-PUT http://localhost:3000/matchas/9
+PUT http://localhost:3000/matchas/1
 Content-Type: application/json
 
-{
-    "name": "Matcha Latte",
-    "price": 80,
-    "id": "9"
+  { "name": "Matcha Oat Latte",
+    "price": 70,
+    "id": "1"
   }
 
 ###
