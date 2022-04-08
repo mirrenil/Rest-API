@@ -1,47 +1,16 @@
 [
-  {
-    "name": "Matcha Oat Latte",
-    "price": 55,
-    "id": "615f3e14-503a-46f8-837f-244edf2b528e"
-  },
-  {
-    "name": "Matcha Lemon Latte",
-    "price": 45,
-    "id": "b65cb8bf-8126-49d6-9d6e-cd245ed92c48"
-  },
-  {
-    "name": "Matcha Iced CBD Latte",
-    "price": 80,
-    "id": "0473c033-123b-4745-a1be-d912a98e089f"
-  },
-  {
-    "name": "Matcha Chocolate Infused Latte",
-    "price": 75,
-    "id": "6bffc742-6ee4-461f-bce2-180350c6732a"
-  },
-  {
-    "name": "Matcha Tumeric Latte",
-    "price": 55,
-    "id": "07c63dbf-08eb-46c1-8a6c-d915330cf2ac"
-  },
-  {
-    "name": "Matcha Activated Charcoal Latte",
-    "price": 75,
-    "id": "4cf85581-f4b6-476c-ab44-8ad654e51baa"
-  },
-  {
-    "name": "Matcha Green Tea Latte",
-    "price": 75,
-    "id": "5c58af-f4b6-476c-ab44-8ad654e51baa"
-  },
-  {
-    "name": "Matcha Activated Charcoal Latte",
-    "price": 75,
-    "id": "2f360f19-df27-4318-8369-3ed5b5be4e21"
-  },
+  { "name": "Matcha Oat Latte", "price": 55, "id": "1" },
+  { "name": "Matcha Lemon Latte", "price": 45, "id": "2" },
+  { "name": "Matcha Iced CBD Latte", "price": 80, "id": "3" },
+  { "name": "Matcha Chocolate Infused Latte", "price": 75, "id": "4" },
+  { "name": "Matcha Tumeric Latte", "price": 55, "id": "5" },
+  { "name": "Matcha Activated Charcoal Latte", "price": 75, "id": "6" },
+  { "name": "Matcha Green Tea Latte", "price": 75, "id": "7" },
+  { "name": "Matcha Activated Charcoal Latte", "price": 75, "id": "8" },
+  { "name": "Matcha Latte", "price": 85, "id": "9" },
   {
     "name": "Matcha Activated Charcoal Latte",
     "price": 85,
-    "id": "7cae6274-8f14-437e-83ee-76609f7c832f"
+    "id": "10"
   }
 ]

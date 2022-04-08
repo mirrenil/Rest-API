@@ -18,13 +18,13 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:3000/matchas/7cae6274-8f14-437e-83ee-76609f7c832f
+PUT http://localhost:3000/matchas/9
 Content-Type: application/json
 
 {
-    "name": "Matcha Activated Charcoal Latte",
-    "price": 100,
-    "id": "7cae6274-8f14-437e-83ee-76609f7c832f"
+    "name": "Matcha Latte",
+    "price": 80,
+    "id": "9"
   }
 
 ###
