@@ -2,7 +2,7 @@ GET http://localhost:3000/matchas
 
 ###
 
-GET http://localhost:3000/matchas/1
+GET http://localhost:3000/matchas/7cae6274-8f14-437e-83ee-76609f7c832f
 
 
 ###
@@ -18,15 +18,15 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:3000/matchas/
+PUT http://localhost:3000/matchas/7cae6274-8f14-437e-83ee-76609f7c832f
 Content-Type: application/json
 
 {
     "name": "Matcha Activated Charcoal Latte",
-    "price": 85,
+    "price": 100,
     "id": "7cae6274-8f14-437e-83ee-76609f7c832f"
   }
 
 ###
 
-DELETE http://localhost:3000/matchas/
+DELETE http://localhost:3000/matchas/1
