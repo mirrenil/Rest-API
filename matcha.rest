@@ -12,7 +12,7 @@ Content-Type: application/json
 
 {
     "name": "Matcha Activated Charcoal Latte",
-    "price": 85,
+    "price": 75,
     "id": ""
 }
 
