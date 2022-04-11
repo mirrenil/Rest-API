@@ -9,13 +9,13 @@ import {
 
 export const router = express.Router();
 
-//GET
+//GET ALL MATCHAS
 router.get("/", getMatchas);
 
 //POST
 router.post("/", createMatcha);
 
-//GET
+//GET ONE MATCHA
 router.get("/:id", getMatcha);
 
 //PUT

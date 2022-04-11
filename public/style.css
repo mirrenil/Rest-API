@@ -1,58 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-body {
-    background: linear-gradient(90deg, #fbb3b3, #9198e5);
-    color: #feeefe;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Permanent Marker',
-        cursive;
-}
+ .main-content {
+     width: 100%;
+     height: 100%;
+ }
 
-.header-style {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-}
+ body {
+     background: linear-gradient(90deg, #fbb3b3, #9198e5);
+     color: #feeefe;
+     font-family: 'Permanent Marker',
+         cursive;
+ }
 
-header {
-    font-size: 5rem;
-    padding: 2rem;
 
-}
+ header {
+     font-size: 5rem;
+     padding: 2rem;
+     color: #C6FFDD;
+     text-shadow: -1px 1px 0 #9198e5;
+     text-align: center;
+ }
 
-span {
-    font-size: 4rem;
-    font-family: 'Permanent Marker',
-        cursive;
-    color: #C6FFDD;
-    margin: 2rem;
-}
+ button {
+     width: 200px;
+     height: 50px;
+     border: solid 1px #9198e5;
+     border-radius: 2rem;
+     font-size: 1.5rem;
+     background-color: #feeefe;
+     color: #9198e5;
+     margin-top: 4rem;
+ }
 
-.btn-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+ img {
+     width: 300px;
+     height: 400px;
+     margin-top: 2rem;
+ }
 
-}
+ .img-group {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 4rem;
+     margin: 3rem;
+     border: 2px solid #C6FFDD;
+     padding-bottom: 2rem;
+ }
 
-button {
-    width: 200px;
-    height: 50px;
-    border: solid #9198e5 .2rem;
-    border-radius: 2rem;
-    font-size: 1.5rem;
-    background-color: #feeefe;
-    color: #9198e5;
-}
+
+ .img-btn {
+     width: 100px;
+ }
+
+ form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-size: 2rem;
+ }
+
+ label {
+     margin-bottom: .2rem;
+
+     color: #feeefe;
+     text-shadow: -1px 1px 0 #9198e5;
+ }
+
+ select {
+     text-align: center;
+     width: 330px;
+     height: 50px;
+     border: solid 1px #9198e5;
+     border-radius: 2rem;
+     font-size: 1.5rem;
+     background-color: #feeefe;
+     color: #9198e5;
+     margin-top: 4rem;
+ }
+
+ .flex {
+     display: flex;
+ }
+
+ .column {
+     flex-direction: column;
+ }

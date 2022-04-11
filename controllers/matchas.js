@@ -40,11 +40,12 @@ export const deleteMatcha = (req, res) => {
   let matchaToDelete = matchas.find((matcha) => matcha.id === id);
   let updatedListOfMatchas = matchas.filter((matcha) => matcha.id !== id);
   saveMatcha(updatedListOfMatchas);
-  res.send("Matcha has been deleted");
+  // res.send("Matcha has been deleted");
+  res.json(`Matcha with the id ${id} has been deleted`);
 
   matchas = matchas.filter((matcha) => matcha.id !== id);
 
-  res.json(`Matcha with the id ${id} has been deleted`);
+  // res.json(`Matcha with the id ${id} has been deleted`);
 };
 
 export const updateMatcha = (req, res) => {

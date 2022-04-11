@@ -7,23 +7,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>It's Matcha Time</title>
     <script src="./logic.js"></script>
-    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <!--     <link rel="stylesheet" href="/style.css"> -->
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        background: linear-gradient(90deg, #fbb3b3, #9198e5);
+        color: #feeefe;
+        font-family: 'Permanent Marker',
+            cursive;
+    }
+
+
+    header {
+        font-size: 5rem;
+        padding: 2rem;
+        color: #C6FFDD;
+        text-shadow: -1px 1px 0 #9198e5;
+        text-align: center;
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+        border: solid 1px #9198e5;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+        background-color: #feeefe;
+        color: #9198e5;
+        margin-top: 4rem;
+    }
+
+    img {
+        width: 300px;
+        height: 400px;
+        margin-top: 2rem;
+    }
+
+    .img-group {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        margin: 3rem;
+        border: 2px solid #C6FFDD;
+        padding-bottom: 2rem;
+    }
+
+
+    .img-btn {
+        width: 100px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    label {
+        margin-bottom: .2rem;
+
+        color: #feeefe;
+        text-shadow: -1px 1px 0 #9198e5;
+    }
+
+    select {
+        text-align: center;
+        width: 330px;
+        height: 50px;
+        border: solid 1px #9198e5;
+        border-radius: 2rem;
+        font-size: 1.5rem;
+        background-color: #feeefe;
+        color: #9198e5;
+        margin-top: 4rem;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+</style>
 
 <body>
-    <main>
-        <div class="header-style">
-            <header>Welcome to Matcha Heaven!</header>
-            <span>I love you so Matcha</span>
+    <main class="flex column">
+        <header>Welcome to Matcha Heaven!</header>
+        <div class="main-content">
+            <form action="http://localhost:3000" method: GET>
+                <label for="matcha">Which Matcha would you like?</label>
+                <select name="Matchas " id="matcha-options">
+                    <option value="">Please choose a matcha</option>
+                    <option value="Matcha Iced CBD Latte">Matcha Iced CBD Latte
+                    </option>
+                    <option value="Matcha Chocolate Infused Latte">Matcha Chocolate Infused Latte
+                    </option>
+                    <option value="Matcha Tumeric Latte">Matcha Tumeric Latte
+                    </option>
+                    <option value="Matcha Lavender Latte">Matcha Lavender Latte
+                    </option>
+                    <option value="Matcha Green Tea Latte">Matcha Green Tea Latte
+                    </option>
+                    <option value="Matcha Activated Charcoal Latte">Matcha Activated Charcoal Latte
+                    </option>
+                    <option value="Matcha Iced Dirty Espresso Latte">Matcha Iced Dirty Espresso Latte
+                    </option>
+                    <option value="Matcha Strawberry Latte">Matcha Strawberry Latte
+                    </option>
+                </select>
+                <button onsubmit="">ORDER</button>
+            </form>
+
+            <div class="menu-div">
+                <div class="img-group">
+                    <div>
+                        <img src="https://i.pinimg.com/originals/e4/04/28/e404288677e350000749e482e806f470.jpg"
+                            alt="Matcha Iced CBD Latte">
+                        <!-- <button class="img-btn">Edit</button>
+                        <button class="img-btn">Delete</button> -->
+                    </div>
+                    <div>
+                        <img src="https://www.littlesugarsnaps.com/wp-content/uploads/2019/01/Matcha-White-Hot-Chocolate-7-of-7.jpg"
+                            alt="Matcha Cocolate Infused Latte">
+                        <!-- <button class="img-btn">Edit</button>
+                        <button class="img-btn">Delete</button> -->
+                    </div>
+
+                    <div>
+                        <img src="https://secretlosangeles.com/wp-content/uploads/2018/12/cha_cha_matcha_matcha_ginger_tumeric_latte_1024x.jpg"
+                            alt="Matcha Tumeric Latte">
+                    </div>
+                    <div>
+                        <img src="https://d2aam04nmhpdf8.cloudfront.net/images/images/000/043/572/xlarge/25655_Bandit_Iced_Honey_Lavender_Matcha_Latte.png?1612834755"
+                            alt="Matcha Lavender Latte">
+                    </div>
+                    <div>
+                        <img src=" https://images.japancentre.com/recipes/pics/16/main/matcha-latte.jpg?1469572822"
+                            alt="Matcha Green Tea Latte">
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV0Ds74kohi-ZNgjTRlC3dz-Pb2LqfMcwz8g&usqp=CAU"
+                            alt="Matcha Latte">
+                    </div>
+                    <div>
+                        <img src="https://www.chopstickchronicles.com/wp-content/uploads/2020/05/Matcha-Latte-featured-10.webp"
+                            alt="Matcha Activated Charcaol Latte">
+                    </div>
+                    <div>
+                        <img src="https://thehintofrosemary.com/wp-content/uploads/2020/02/dirty-iced-matcha-latte-cover-photo-1536x1536.jpg"
+                            alt="Matcha Iced Dirty Espresso Latte">
+                    </div>
+                    <div>
+                        <img src="https://carmyy.com/wp-content/uploads/2021/08/strawberry-matcha-latte-n-4.jpg"
+                            alt="Matcha Strawberry Latte">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <button id="get">hämta</button>
-        <button id="save">Spara</button>
-
-        <div class="btn-group">
-            <span>Order a random Matcha</span>
-            <button>SURPRISE ME</button>
-        </div>
 
     </main>
 </body>

@@ -1,32 +1,32 @@
-import { METHODS } from "http";
+// import { METHODS } from "http";
 
-document.getElementById("get").addEventListener("click", async () => {
-  let allMatchas = await makeRequest("http://localhost:3000/matchas", "GET");
+// document.getElementById("get").addEventListener("click", async () => {
+//   let allMatchas = await makeRequest("http://localhost:3000/matchas", "GET");
 
-  let newMatcha = await makeRequest(
-    "http://localhost:3000/matchas",
-    "POST",
-    body
-  );
-  console.log(status);
-});
+//   let newMatcha = await makeRequest(
+//     "http://localhost:3000/matchas",
+//     "POST",
+//     body
+//   );
+//   console.log(status);
+// });
 
-document.getElementById("save").addEventListener("click", async () => {
-  let body = {
-    name: "Matcha",
-    price: 10,
-  };
-});
+// document.getElementById("save").addEventListener("click", async () => {
+//   let body = {
+//     name: "Matcha",
+//     price: 10,
+//   };
+// });
 
-const makeRequest = async (url, method, body) => {
-  await fetch(url, {
-    method,
-    body: JSON.stringify(body),
-    headers: { "Content-Type": "application/json" },
-  });
+// const makeRequest = async (url, method, body) => {
+//   await fetch(url, {
+//     method,
+//     body: JSON.stringify(body),
+//     headers: { "Content-Type": "application/json" },
+//   });
 
-  return response.json();
-};
+//   return response.json();
+// };
 
 /*
 window.addEventListener("load", (e) => {
