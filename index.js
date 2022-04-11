@@ -12,6 +12,12 @@ app.get("/", (req, res) => {
   res.send("Hello Matcha lovers!");
 });
 
-// app.use("/", express.static("public"));
+// Global felhanterare
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(500).json({ error: err.message });
+});
+
+app.use("/", express.static("public"));
 
 app.listen(port, () => console.log(`This app is running on port ${port}!`));

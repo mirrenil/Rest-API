@@ -7,7 +7,7 @@ export function matchasInStock() {
 }
 
 export function saveMatcha(list) {
-  fs.writeFileSync("./matcha.json", JSON.stringify(list), (err) => {
+  fs.writeFileSync("./matcha.json", JSON.stringify(list, null, 2), (err) => {
     if (err) {
       console.log(err);
     }

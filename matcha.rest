@@ -13,7 +13,7 @@ Content-Type: application/json
  { 
     "name": "Matcha Oat Latte", 
     "price": 55, 
-    "id": "1" 
+    "id": "3" 
   }
 
 ###
@@ -23,7 +23,9 @@ Content-Type: application/json
 
   { "name": "Matcha Oat Latte",
     "price": 70,
-    "id": "1"
+    "id": "1",
+    "description": "...please add a description",
+    "url": "https://delightfulplate.com/wp-content/uploads/2019/05/Blender-Iced-Matcha-Green-Tea-Latte-1365x2048.jpg"
   }
 
 ###
