@@ -8,9 +8,9 @@ app.use(express.json());
 
 app.use("/matchas", matchaRoutes);
 
-app.get("/", (req, res) => {
-  res.send("Hello Matcha lovers!");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello Matcha lovers!");
+// });
 
 // Global felhanterare
 app.use((err, req, res, next) => {

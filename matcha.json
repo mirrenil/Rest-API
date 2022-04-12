@@ -1,68 +1,72 @@
-{
-  "matchaMenu": "Matcha Heaven",
-  "matchas": [
-    {
-      "name": "Matcha Iced CBD Latte",
-      "price": 80,
-      "id": "3",
-      "description": "For the one who needs to chill, relax with some CBD in your Matcha",
-      "url": "https://i.pinimg.com/originals/e4/04/28/e404288677e350000749e482e806f470.jpg"
-    },
-    {
-      "name": "Matcha Chocolate Infused Latte",
-      "price": 75,
-      "id": "4",
-      "description": "Matcha with Dark Chocolate",
-      "url": "https://www.littlesugarsnaps.com/wp-content/uploads/2019/01/Matcha-White-Hot-Chocolate-7-of-7.jpg"
-    },
-    {
-      "name": "Matcha Tumeric Latte",
-      "price": 55,
-      "id": "5",
-      "description": "Matcha + Tumeric = Match(a) made in heaven!",
-      "url": "https://secretlosangeles.com/wp-content/uploads/2018/12/cha_cha_matcha_matcha_ginger_tumeric_latte_1024x.jpg"
-    },
-    {
-      "name": "Matcha Green Tea Latte",
-      "price": 75,
-      "id": "6",
-      "description": "For the Green Tea lover",
-      "url": "https://images.japancentre.com/recipes/pics/16/main/matcha-latte.jpg?1469572822"
-    },
-    {
-      "name": "Matcha Lavender Latte",
-      "price": 75,
-      "id": "7",
-      "description": "Similar to the OG Matcha but with a shot of Lavender syrup",
-      "url": "https://d2aam04nmhpdf8.cloudfront.net/images/images/000/043/572/xlarge/25655_Bandit_Iced_Honey_Lavender_Matcha_Latte.png?1612834755"
-    },
-    {
-      "name": "Matcha Latte",
-      "price": 85,
-      "id": "8",
-      "description": "The OG Matcha",
-      "url": "https://www.chopstickchronicles.com/wp-content/uploads/2020/05/Matcha-Latte-featured-10.webp"
-    },
-    {
-      "name": "Matcha Activated Charcoal Latte",
-      "price": 85,
-      "id": "9",
-      "description": "Matcha Latte with a dust of Activated Charcoal",
-      "url": "https://envato-shoebox-0.imgix.net/03c7/82a7-f739-4778-8381-eb624b1de759/276_RFNDXzE4MjItRWRpdA.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=900&s=02ecb94d1d14b6b9ea271408f11ab915"
-    },
-    {
-      "name": "Matcha Iced Dirty Espresso Latte",
-      "price": 85,
-      "id": "10",
-      "description": "Iced, with a hint of dirty espresso",
-      "url": "https://thehintofrosemary.com/wp-content/uploads/2020/02/dirty-iced-matcha-latte-cover-photo-1536x1536.jpg"
-    },
-    {
-      "name": "Matcha Strawberry Latte",
-      "price": 55,
-      "id": "a4bbaeef-d99c-4485-913b-a5effb24d493",
-      "description": "Matcha is a Japanese green tea drink made from Camellia sinensis leaves, which have undergone a number of different botanical treatments. The leaves are dried and brewed into a special type of green tea that is then prepared by boiling the leaves, adding a special ingredient, Rooibos, and then steeping the resulting infusion in hot water for about an hour. The infusion is then poured into a glass and topped with a dollop of milk.",
-      "url": "https://carmyy.com/wp-content/uploads/2021/08/strawberry-matcha-latte-n-4.jpg"
-    }
-  ]
-}
+[
+  {
+    "name": "Matcha Iced CBD Latte",
+    "price": 80,
+    "id": "3",
+    "description": "For the one who needs to chill, relax with some CBD in your Matcha",
+    "url": "https://i.pinimg.com/originals/e4/04/28/e404288677e350000749e482e806f470.jpg"
+  },
+  {
+    "name": "Matcha Chocolate Infused Latte",
+    "price": 75,
+    "id": "4",
+    "description": "Matcha with Dark Chocolate",
+    "url": "https://www.littlesugarsnaps.com/wp-content/uploads/2019/01/Matcha-White-Hot-Chocolate-7-of-7.jpg"
+  },
+  {
+    "name": "Matcha Lavender Latte",
+    "price": 75,
+    "id": "7",
+    "description": "Similar to the OG Matcha but with a shot of Lavender syrup",
+    "url": "https://d2aam04nmhpdf8.cloudfront.net/images/images/000/043/572/xlarge/25655_Bandit_Iced_Honey_Lavender_Matcha_Latte.png?1612834755"
+  },
+  {
+    "name": "Matcha Latte",
+    "price": 85,
+    "id": "8",
+    "description": "The OG Matcha",
+    "url": "https://www.chopstickchronicles.com/wp-content/uploads/2020/05/Matcha-Latte-featured-10.webp"
+  },
+  {
+    "name": "Matcha Activated Charcoal Latte",
+    "price": 85,
+    "id": "9",
+    "description": "Matcha Latte with a dust of Activated Charcoal",
+    "url": "https://envato-shoebox-0.imgix.net/03c7/82a7-f739-4778-8381-eb624b1de759/276_RFNDXzE4MjItRWRpdA.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=900&s=02ecb94d1d14b6b9ea271408f11ab915"
+  },
+  {
+    "name": "Matcha Iced Dirty Espresso Latte",
+    "price": 85,
+    "id": "10",
+    "description": "Iced, with a hint of dirty espresso",
+    "url": "https://thehintofrosemary.com/wp-content/uploads/2020/02/dirty-iced-matcha-latte-cover-photo-1536x1536.jpg"
+  },
+  {
+    "name": "Matcha Strawberry Latte",
+    "price": 55,
+    "id": "a4bbaeef-d99c-4485-913b-a5effb24d493",
+    "description": "Matcha is a Japanese green tea drink made from Camellia sinensis leaves, which have undergone a number of different botanical treatments. The leaves are dried and brewed into a special type of green tea that is then prepared by boiling the leaves, adding a special ingredient, Rooibos, and then steeping the resulting infusion in hot water for about an hour. The infusion is then poured into a glass and topped with a dollop of milk.",
+    "url": "https://carmyy.com/wp-content/uploads/2021/08/strawberry-matcha-latte-n-4.jpg"
+  },
+  {
+    "name": "Matcha Oat Latte",
+    "price": 55,
+    "id": "4237ec45-e515-4999-b525-8254681f6fa7",
+    "description": "...please add a description",
+    "url": "https://delightfulplate.com/wp-content/uploads/2019/05/Blender-Iced-Matcha-Green-Tea-Latte-1365x2048.jpg"
+  },
+  {
+    "name": "Matcha Tumeric Latte",
+    "price": 55,
+    "id": "5",
+    "description": "Matcha + Tumeric = Match(a) made in heaven!",
+    "url": "https://secretlosangeles.com/wp-content/uploads/2018/12/cha_cha_matcha_matcha_ginger_tumeric_latte_1024x.jpg"
+  },
+  {
+    "name": "Matcha Green Tea Latte",
+    "price": 75,
+    "id": "6",
+    "description": "For the Green Tea lover",
+    "url": "https://images.japancentre.com/recipes/pics/16/main/matcha-latte.jpg?1469572822"
+  }
+]

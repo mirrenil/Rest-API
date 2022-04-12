@@ -1,9 +1,9 @@
 import fs, { writeFile } from "fs";
 
 export function matchasInStock() {
-  const data = fs.readFileSync("matcha.json");
-  const matchas = JSON.parse(data);
-  return matchas;
+  const data = fs.readFileSync("./matcha.json");
+  const matchaData = JSON.parse(data);
+  return matchaData;
 }
 
 export function saveMatcha(list) {
