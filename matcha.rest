@@ -32,4 +32,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/matchas/6
+DELETE http://localhost:3000/matchas/ea6b6820-3e30-4a10-beae-e8ed2ec50275
