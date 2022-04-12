@@ -15,15 +15,12 @@ DELETE   /api/products/:id
 ```
 # Install dependencies
 npm install
-yarn install
 
 
 # Run in production
 npm start
-yarn start
 ```
 
-# Krav för G:
 - [x] 1.Projektet innehåller minst 4 st. endpoints (GET, POST, PUT & DELETE för en resurs)
 - [x] 2.Samtliga endpoints skall kunna nås via en REST Client fil (.rest|.http)
 - [x] 3.Datan som API:et hanterar sparas lokalt i serverfilen
@@ -33,8 +30,9 @@ yarn start
 - [x] 7.Uppgiften lämnas in i tid!
 
 ### Krav för VG:
+
 - [x] 1.Alla punkter för godkänt är uppfyllda
 - [x] 2.All data skall vara sparad i en JSON-fil istället för i serverfilen
 - [x] 3.Datan i JSON-filen skall uppdateras då något läggs till, uppdateras eller tas bort4
 - [ ] 4.Ett klient-gränssnitt skall byggas för att anropa API:ets alla olika endpoints och presentera datan, redigeringsformulär skall fyllas i med befintlig information.
-- [ ] 5.Ytterligare en GET endpoint skall läggas till där det går att hämta ett specifikt objekt
+- [x] 5.Ytterligare en GET endpoint skall läggas till där det går att hämta ett specifikt objekt
