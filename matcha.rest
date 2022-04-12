@@ -13,7 +13,7 @@ Content-Type: application/json
  { 
     "name": "Matcha Lemon Pie Latte", 
     "price": 55,
-    "id": "1",
+    "id": "a153ae22-8baf-4eb4-9f3d-84f320294203",
     "description": "...please add a description",
     "url": "https://delightfulplate.com/wp-content/uploads/2019/05/Blender-Iced-Matcha-Green-Tea-Latte-1365x2048.jpg"
   }
@@ -25,7 +25,7 @@ Content-Type: application/json
 
   { "name": "Matcha Oat Latte",
     "price": 70,
-    "id": "1",
+    "id": "8",
     "description": "...please add a description",
     "url": "https://delightfulplate.com/wp-content/uploads/2019/05/Blender-Iced-Matcha-Green-Tea-Latte-1365x2048.jpg"
   }
