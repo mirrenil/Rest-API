@@ -39,7 +39,7 @@ export const deleteMatcha = (req, res) => {
   let matchaToDelete = matchas.find((matcha) => matcha.id === id);
   let updatedListOfMatchas = matchas.filter((matcha) => matcha.id !== id);
   saveMatcha(updatedListOfMatchas);
-  res.json(` ${matchaToDelete} has been deleted... `);
+  res.json(`The Matcha with ${id} has been deleted... `);
 };
 
 export const updateMatcha = (req, res) => {
