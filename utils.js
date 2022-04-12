@@ -1,13 +1,13 @@
 import fs, { writeFile } from "fs";
 
 export function matchasInStock() {
-  const data = fs.readFileSync("matcha.json");
-  const matchas = JSON.parse(data);
-  return matchas;
+  const data = fs.readFileSync("./matcha.json");
+  const matchaData = JSON.parse(data);
+  return matchaData;
 }
 
 export function saveMatcha(list) {
-  fs.writeFileSync("./matcha.json", JSON.stringify(list), (err) => {
+  fs.writeFileSync("./matcha.json", JSON.stringify(list, null, 2), (err) => {
     if (err) {
       console.log(err);
     }

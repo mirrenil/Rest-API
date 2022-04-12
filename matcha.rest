@@ -12,20 +12,24 @@ Content-Type: application/json
 
  { 
     "name": "Matcha Oat Latte", 
-    "price": 55, 
-    "id": "1" 
+    "price": 55,
+    "id": "1",
+    "description": "...please add a description",
+    "url": "https://delightfulplate.com/wp-content/uploads/2019/05/Blender-Iced-Matcha-Green-Tea-Latte-1365x2048.jpg"
   }
 
 ###
 
-PUT http://localhost:3000/matchas/1
+PUT http://localhost:3000/matchas/5
 Content-Type: application/json
 
   { "name": "Matcha Oat Latte",
     "price": 70,
-    "id": "1"
+    "id": "1",
+    "description": "...please add a description",
+    "url": "https://delightfulplate.com/wp-content/uploads/2019/05/Blender-Iced-Matcha-Green-Tea-Latte-1365x2048.jpg"
   }
 
 ###
 
-DELETE http://localhost:3000/matchas/2
+DELETE http://localhost:3000/matchas/6

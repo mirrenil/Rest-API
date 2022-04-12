@@ -92,3 +92,9 @@
  .column {
      flex-direction: column;
  }
+
+ p {
+     font-size: 1.2rem;
+     margin-top: .7rem;
+     text-align: center;
+ }

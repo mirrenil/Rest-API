@@ -2,21 +2,20 @@ import { v4 as uuidv4 } from "uuid";
 import fs from "fs";
 import { saveMatcha, findExistingID, matchasInStock } from "../utils.js";
 
-export const getMatchas = (req, res) => {
+export const getMatchas = async (req, res) => {
   const data = fs.readFileSync("matcha.json");
-  const matchas = JSON.parse(data);
-  res.json(matchas);
+  const matchaData = JSON.parse(data);
+  res.json(matchaData);
 };
 
 export const createMatcha = (req, res) => {
   const newMatcha = req.body;
-
   const data = fs.readFileSync("matcha.json");
-  const matchas = JSON.parse(data);
+  const matchaData = JSON.parse(data);
 
-  matchas.push({ ...newMatcha, id: uuidv4() });
+  matchaData.push({ ...newMatcha, id: uuidv4() });
 
-  fs.writeFileSync("matcha.json", JSON.stringify(matchas));
+  fs.writeFileSync("matcha.json", JSON.stringify(matchaData));
 
   res.status(201).send(`${newMatcha.name} added to menu`);
 };
